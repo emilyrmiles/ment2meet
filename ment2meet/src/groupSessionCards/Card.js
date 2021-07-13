@@ -2,6 +2,7 @@ import React from "react";
 import "./Card.css";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Card({ categories, title, date, time, mentors }) {
@@ -14,11 +15,12 @@ function Card({ categories, title, date, time, mentors }) {
           })}
         </div>
         <div className="card-add-calendar">
-          <p>Add to Calendar</p>
+          <span>Add to Calendar</span>
+          <FontAwesomeIcon icon={faPlusCircle} />
         </div>
       </div>
-      <div>
-        <h1 className="card-title">{title}</h1>
+      <div className="card-title">
+        <h1>{title}</h1>
       </div>
       <div className="card-time">
         <FontAwesomeIcon icon={faCalendar} />
@@ -39,8 +41,8 @@ function Card({ categories, title, date, time, mentors }) {
               <div className="card-mentor-right">
                 <div className="card-mentor-name">{mentor.name}</div>
                 <hr className="card-mentor-line" />
-                <p>{mentor.position}</p>
-                <p>{mentor.work}</p>
+                <span>{mentor.position}</span><br/>
+                <span>{mentor.work}</span>
               </div>
             </div>
           );

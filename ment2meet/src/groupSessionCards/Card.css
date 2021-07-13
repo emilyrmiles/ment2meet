@@ -11,17 +11,31 @@
   
     text-align: left;
   }
-  
-  .card-categories {
-    float: left;
-  }
+.card-top{
+    height: 30px;
+}
   
   .card-add-calendar {
-    float: right;
+      float: right;
+      font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    /* identical to box height */
+
+
+    /* Jet */
+
+    color: #30323D;
+  }
+
+  .card-add-calendar span{
+    padding: 5px 10px;
+    font-size: 14px;
   }
   
   .card-category {
-    display: inline-block;
+    float: left;
     padding: 5px 10px;
     margin-right: 10px;
   
@@ -36,8 +50,8 @@
   
     color: #30323d;
   }
-  
-  .card-title {
+
+  .card-title h1{
     font-family: Helvetica;
     font-style: normal;
     font-weight: bold;
@@ -97,7 +111,7 @@
     float: right;
     width: 120px;
   }
-  .card-mentor-right p {
+  .card-mentor-right span {
     font-family: Helvetica;
     font-style: normal;
     font-weight: normal;
@@ -106,7 +120,10 @@
   
     color: #6a6a6a;
   }
-  hr.card-mentor-line {
-    border: 2px solid #a981ff;
+  .card-mentor-line {
+    background-color: #a981ff;
+    border: 0 none;
+    color: #a981ff;
+    height: 2px;
   }
   
