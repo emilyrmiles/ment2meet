@@ -1,0 +1,61 @@
+
+.hero-image {
+    background-image: url('../assets/emily_fin.png');
+    background-color: #cccccc;
+    
+    height: 800px;
+    background-position: 60%, 80%;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position:relative;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -10%);
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 30px;   
+    padding: 0;
+    margin: 0;
+    line-height:40px;
+    color: #30323D;
+    
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0); */
+    object-fit: contain;  
+}
+.hero-below {
+    text-align:left;
+    position: absolute;
+    top: 96%;
+    left: 15%;
+    transform: translate(-18%, -10%);
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 26px;   
+    padding: 10;
+    margin: 10;
+    line-height:25px;
+    color: #30323D;
+}
+
+.btn {
+    background-color: #FFD481;
+    color: #30323D;
+    font-size: 16px;
+    padding: 8px 8px;
+    border-radius: 2px;
+    margin: 12px 0px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: bold;
+    }
+
+    
