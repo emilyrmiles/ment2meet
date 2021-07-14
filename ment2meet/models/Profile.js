@@ -5,6 +5,10 @@ const ProfileSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user'
   },
+  major: {
+    type: String,
+    ref: 'user'
+  },
   questions: {
     question1: {
       type: String
@@ -20,24 +24,24 @@ const ProfileSchema = new mongoose.Schema({
     },
   },
   mentorpassion: {
-    option1: {
+    passion1: {
       type: String
     },
-    option2: {
+    passion2: {
       type: String
     },
-    option3: {
+    passion3: {
       type: String
     },
   },
   mentorwork: {
-    option1: {
+    work1: {
       type: String
     },
-    option2: {
+    work2: {
       type: String
     },
-    option3: {
+    work3: {
       type: String
     },
   },
