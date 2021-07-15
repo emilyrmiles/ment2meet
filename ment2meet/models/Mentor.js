@@ -5,15 +5,6 @@ const MentorSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  email: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  password: {
-    type: String,
-    required: true
-  },
   avatar: {
     type: String
   },
@@ -29,16 +20,14 @@ const MentorSchema = new mongoose.Schema({
   pronounce: {
     type: String
   },
-  passion: {
-    passion1: {
-      type: String
-    },
-    passion2: {
-      type: String
-    },
-    passion3: {
-      type: String
-    },
+  passion1: {
+    type: String
+  },
+  passion2: {
+    type: String
+  },
+  passion3: {
+    type: String
   },
   date: {
     type: Date,
@@ -46,4 +35,4 @@ const MentorSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('user', UserSchema);
+module.exports = mongoose.model('mentor', MentorSchema);
