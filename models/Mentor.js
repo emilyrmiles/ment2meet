@@ -20,14 +20,16 @@ const MentorSchema = new mongoose.Schema({
   pronounce: {
     type: String
   },
-  passion1: {
-    type: String
-  },
-  passion2: {
-    type: String
-  },
-  passion3: {
-    type: String
+  passions: {
+    passion1: {
+      type: String
+    },
+    passion2: {
+      type: String
+    },
+    passion3: {
+      type: String
+    },
   },
   date: {
     type: Date,

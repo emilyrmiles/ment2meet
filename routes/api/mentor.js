@@ -6,6 +6,7 @@ const gravatar = require('gravatar');
 const normalize = require('normalize-url');
 
 const Mentor = require('../../models/Mentor');
+const User = require('../../models/User');
 
 // @route    GET api/mentors
 // @desc     Get all mentors
@@ -59,6 +60,24 @@ router.post('/', async (req, res) => {
   }
 });
 
+// @route    GET api/mentors
+// @desc     Get filtered mentors
+// @access   public    
+router.get('/', async function(req, res, next){
+  try {
+    //fliter by major
+      const fliteredMentors = await Mentor.find({major: req.params.major, passion1: req.params.passion1, passion2: req.params.passion2, passion3: req.params.passion3});
+      res.status(200).json({
+        status: 'success',
+        result: fliteredMentors.length,
+        data: {
+          fliteredMentors
+        }
+      });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
+
 module.exports = router;
-
-
