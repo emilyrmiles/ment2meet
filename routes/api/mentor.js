@@ -65,8 +65,7 @@ router.post('/', async (req, res) => {
 // @access   public    
 router.get('/', async function(req, res, next){
   try {
-    //fliter by major
-      const fliteredMentors = await Mentor.find({major: req.params.major, passion1: req.params.passion1, passion2: req.params.passion2, passion3: req.params.passion3});
+      const fliteredMentors = await Mentor.find({major: req.params.major, passions: {$all: [req.params.passion1, req.params.passion2, req.params.passion3]}});
       res.status(200).json({
         status: 'success',
         result: fliteredMentors.length,
