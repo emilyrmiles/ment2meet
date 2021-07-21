@@ -1,7 +1,7 @@
 
 .hero-image {
-    background-image: url('../assets/emily_fin.png');
-    background-color: #cccccc;
+    background-image: url('../assets/hero-lines.png');
+    background-color: #FFFFFF;
     
     height: 800px;
     background-position: 60%, 80%;
@@ -16,11 +16,11 @@
     position: absolute;
     top: 20%;
     left: 30%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -30%);
     font-family: Helvetica;
     font-style: normal;
     font-weight: bold; 
-    font-size: 30px;   
+    font-size: 25px;   
     padding: 0;
     margin: 0;
     line-height:40px;
@@ -34,7 +34,7 @@
     position: absolute;
     top: 96%;
     left: 15%;
-    transform: translate(-18%, -10%);
+    transform: translate(-18%, -3%);
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: normal; 
@@ -56,6 +56,47 @@
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: bold;
-    }
+}
+
+.right-image {
+    background-image: url('../assets/homepage-image.png');
+    background-color:#FFFFFF;
+    width: 447px;
+    height: 500px;
+    /* background-position: 75%, 75%; */
+    transform: translate(140%, -85%);
+    background-repeat: no-repeat;
+    object-fit: none;
+    width: 100%;
+    position:relative;
+}
+
+/* .second-home-image {
+    background-image: url('../assets/second-home.png');
+    background-color:#FFFFFF;
+    width: 1600px;
+    height: 800px;
+    
+    transform: translate(-60%, 100%);
+    background-repeat: no-repeat;
+    object-fit: none;
+    width: 300%;
+    position:relative;
+} */
+
+.third-home-image {
+    background-image: url('../assets/third-home.png');
+    background-size: contain;
+    background-color:#FFFFFF;
+    width: 100%;
+    height: 120%;
+    transform: translate(2%, 100%);
+    background-position: 50%, 0%;
+    background-repeat: no-repeat;
+    /* width: 80%; */
+    object-fit: contain;
+    position:relative;
+}
+
 
     
