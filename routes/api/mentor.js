@@ -14,13 +14,7 @@ const User = require('../../models/User');
 router.get('/', async (req, res) => {
   try {
     const mentors = await Mentor.find();
-    res.status(200).json({
-      status: 'success',
-      result: mentors.length,
-      data: {
-        mentors
-      }
-    });
+    res.json(mentors);
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server Error');
@@ -30,13 +24,11 @@ router.get('/', async (req, res) => {
 // @route    GET api/mentor
 // @desc     Get one mentor
 // @access   public
-router.get('/:id', async (req, res) => {
+router.get('/mentor_by_id/:id', async (req, res) => {
   try {
     const mentor = await Mentor.findById(req.params.id);
-    res.status(200).json({
-      status: 'success',
-      data: mentor
-    });
+    if (!profile) return res.status(400).json({ msg: 'Mentor not found' });
+    return res.json(mentor);
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server Error');
@@ -49,11 +41,28 @@ router.get('/:id', async (req, res) => {
 // @access   Public
 router.post('/', async (req, res) => {
   try {
-    const newmentor = await Mentor.create(req.body);
-    res.status(200).json({
-      status: 'success',
-      data: newmentor
+    const { name, email, major, position, company, pronounce, passions} = req.body;
+    const avatar = normalize(
+      gravatar.url(email, {
+        s: '200',
+        r: 'pg',
+        d: 'mm'
+      }),
+      { forceHttps: true }
+    );
+
+    newmentor = new Mentor({
+      name, 
+      avatar, 
+      major, 
+      position, 
+      company, 
+      pronounce, 
+      passions, 
     });
+    await newmentor.save();
+    return res.json(newmentor);
+
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server Error');
@@ -63,16 +72,17 @@ router.post('/', async (req, res) => {
 // @route    GET api/mentors
 // @desc     Get filtered mentors
 // @access   public    
-router.get('/', async function(req, res, next){
+router.get('/fliter', async function(req, res, next){
   try {
-      const fliteredMentors = await Mentor.find({major: req.params.major, passions: {$all: [req.params.passion1, req.params.passion2, req.params.passion3]}});
-      res.status(200).json({
-        status: 'success',
-        result: fliteredMentors.length,
-        data: {
-          fliteredMentors
-        }
-      });
+    let findArgs = {major: req.query.major};
+    console.log(findArgs);
+    const flitered = await Mentor.find(findArgs);
+    console.log(flitered);
+    fliteredMentor = flitered.filter(function(obj) {
+      return obj.passions.passion1 === req.query.passion1 && obj.passions.passion2 === req.query.passion2 && obj.passions.passion3 === req.query.passion3;
+    });
+    console.log(fliteredMentor);
+    return res.json(fliteredMentor);
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server Error');
