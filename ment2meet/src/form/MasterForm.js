@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Step1 from "./Step1";
 import Step2 from "./Step2";
+import Step3 from "./Step3";
 
 import MultiStepProgressBar from "./MultiStepProgressBar";
 
@@ -50,7 +51,7 @@ class MasterForm extends Component {
     let currentStep = this.state.currentStep;
 
     // If the current step is 1 or 2, then add one on "next" button click
-    currentStep = currentStep >= 2 ? 3 : currentStep + 1;
+    currentStep = currentStep >= 3 ? 4 : currentStep + 1;
     this.setState({
       currentStep: currentStep
     });
@@ -71,17 +72,6 @@ class MasterForm extends Component {
     this.setState({
       currentStep: currentStep
     });
-  }
-
-  get submitButton() {
-    let currentStep = this.state.currentStep;
-
-    // If the current step is the last step, then render the "submit" button
-    if (currentStep > 2) {
-      return <div color="primary float-right">Submit</div>;
-    }
-    // ...else render nothing
-    return null;
   }
 
   render() {
@@ -106,11 +96,13 @@ class MasterForm extends Component {
                 handleChange={this.handleChange}
                 email={this.state.username}
               />
-            <div>
-              {this.previousButton}
-              {this.nextButton}
-              {this.submitButton}
-            </div>
+              <Step3
+                next={this._next}
+                previous={this._prev}
+                currentStep={this.state.currentStep}
+                handleChange={this.handleChange}
+                email={this.state.username}
+              />
           </div>
         </form>
       </>
