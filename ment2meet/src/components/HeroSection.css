@@ -1,0 +1,102 @@
+
+.hero-image {
+    background-image: url('../assets/hero-lines.png');
+    background-color: #FFFFFF;
+    
+    height: 800px;
+    background-position: 60%, 80%;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position:relative;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -30%);
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 25px;   
+    padding: 0;
+    margin: 0;
+    line-height:40px;
+    color: #30323D;
+    
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0); */
+    object-fit: contain;  
+}
+.hero-below {
+    text-align:left;
+    position: absolute;
+    top: 96%;
+    left: 15%;
+    transform: translate(-18%, -3%);
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 26px;   
+    padding: 10;
+    margin: 10;
+    line-height:25px;
+    color: #30323D;
+}
+
+.btn {
+    background-color: #FFD481;
+    color: #30323D;
+    font-size: 16px;
+    padding: 8px 8px;
+    border-radius: 2px;
+    margin: 12px 0px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.right-image {
+    background-image: url('../assets/homepage-image.png');
+    background-color:#FFFFFF;
+    width: 447px;
+    height: 500px;
+    /* background-position: 75%, 75%; */
+    transform: translate(140%, -85%);
+    background-repeat: no-repeat;
+    object-fit: none;
+    width: 100%;
+    position:relative;
+}
+
+/* .second-home-image {
+    background-image: url('../assets/second-home.png');
+    background-color:#FFFFFF;
+    width: 1600px;
+    height: 800px;
+    
+    transform: translate(-60%, 100%);
+    background-repeat: no-repeat;
+    object-fit: none;
+    width: 300%;
+    position:relative;
+} */
+
+.third-home-image {
+    background-image: url('../assets/third-home.png');
+    background-size: contain;
+    background-color:#FFFFFF;
+    width: 100%;
+    height: 120%;
+    transform: translate(2%, 100%);
+    background-position: 50%, 0%;
+    background-repeat: no-repeat;
+    /* width: 80%; */
+    object-fit: contain;
+    position:relative;
+}
+
+
+    
