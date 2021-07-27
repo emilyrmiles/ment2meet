@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Regisiter from './components/auth/register';
 import './App.css';
+import React, { Component }  from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+  <Router>
+  <Fragment>
+    <h1>App</h1>
+    <section className="container">
+      <Switch>
+        <Route exact path="/register" component={Regisiter} />
+      </Switch>
+    </section>
+
+  </Fragment>
+  </Router>
 }
 
 export default App;
