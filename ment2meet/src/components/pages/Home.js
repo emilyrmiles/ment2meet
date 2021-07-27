@@ -6,11 +6,13 @@ import CardTwo from '../CardTwo';
 
 function Home() {
     return (
-        <>
-            {/* <HeroSection/> */}
-            {/* <Card/> */}
+    <div>
+            <HeroSection/>
+            <Card/>
             <CardTwo/>
-        </>
+    </div>
+            
+      
     );
 }
 export default Home;

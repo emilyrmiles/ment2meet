@@ -4,7 +4,7 @@ import './index.css';
 import logo from './ment2meet-logo.png'
 const Navbar = () => {
     return (
-        <>
+   
         
           <Nav>
               <NavLink to= "/">
@@ -51,7 +51,7 @@ const Navbar = () => {
                   <NavBtnLink to='/signin'>Sign Up/ Sign In</NavBtnLink>
               </NavBtn>
             </Nav>  
-        </>
+    
     );
 };
 
