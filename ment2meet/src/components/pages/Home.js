@@ -4,12 +4,14 @@ import HeroSection from'../HeroSection';
 import Card from '../Card';
 import CardTwo from '../CardTwo';
 
+
 function Home() {
     return (
         <>
-            {/* <HeroSection/> */}
-            {/* <Card/> */}
+            <HeroSection/>
+            <Card/>
             <CardTwo/>
+            {/* <MentorCard /> */}
         </>
     );
 }

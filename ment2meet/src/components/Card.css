@@ -1,6 +1,7 @@
 .card {
   padding: 4rem;
   background: #fff;
+  transform: translate(0%, 2000px);  
 }
 
 
