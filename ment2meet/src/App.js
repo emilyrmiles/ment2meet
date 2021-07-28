@@ -9,6 +9,7 @@ import Card  from './groupSessionCards/Card';
 
 function App() {
   return (
+    
     <Router>
       <Navbar />
         <MasterForm />
