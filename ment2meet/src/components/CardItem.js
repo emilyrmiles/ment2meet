@@ -3,7 +3,7 @@ import React from 'react';
 
 function CardItem(props) {
   return (
-    <>
+    <div>
         <div className ="card-image"> 
             <img 
              className='profile-pic'
@@ -15,7 +15,7 @@ function CardItem(props) {
             <h4 className= 'props-pronouns' style={{ color: 'grey' }}> {props.pronouns} </h4>
             <p className = 'props-about'> {props.about} </p>
         </div>
-    </>
+    </div>
   );
 }
 
