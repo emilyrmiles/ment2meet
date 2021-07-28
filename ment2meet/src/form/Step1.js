@@ -10,6 +10,7 @@ const Step1 = props => {
     const [preview, setPreview] = useState(null);
     function onCrop(pv) {
         setPreview(pv);
+        props.handleChangeProfilePicture(pv)
     }
     function onBeforeFileLoad(elem) {
         if (elem.target.files[0].size > 2000000) {
@@ -46,7 +47,6 @@ const Step1 = props => {
                                 <br/>
                                 Looking great!
                             </div>
-
                         }
                         
                         <br/>
@@ -55,13 +55,14 @@ const Step1 = props => {
                 </div>
                 <div className="form-content-right">
                     <label for="fname">What's your name?</label><br/>
-                    <input type="text" class="input" id="fname" name="fname" placeholder="First and last name"/><br/>
+                    <input type="text" class="input" id="fname" name="fname" placeholder="First and last name" onChange={props.handleChangeName}/><br/>
+                    {props.name}
                     <label for="femail">What's your email?</label><br/>
                     <input type="text" id="femail" class="input" name="femail" placeholder="Start typing..."/><br/>
                     <label for="fmajor">What you studying?</label><br/>
                     <input type="text" id="fmajor" name="fmajor" class="input" placeholder="Subject / Major"/><br/>
                     <label for="fpassword">Password</label><br/>
-                    <input type="text" id="fpassword" name="fpassword" class="input" placeholder="8 characters minimum"/><br/>
+                    <input type="password" id="fpassword" name="fpassword" class="input" placeholder="8 characters minimum"/><br/>
                     <input type="submit" value="Match me with mentors!"/>
                 </div>
             </div>

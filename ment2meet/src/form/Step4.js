@@ -9,8 +9,8 @@ import polygon from './Polygon 1.svg';
 import Select from 'react-select';
 
 // eslint-disable-next-line no-empty-pattern
-const Step3 = props => {
-    if (props.currentStep !== 3) {
+const Step4 = props => {
+    if (props.currentStep !== 4) {
       return null;
     }
     
@@ -48,6 +48,7 @@ const Step3 = props => {
           ...provided,
           borderBottom: '1px solid #30323D',
           backgroundColor: state.isSelected ? '#FFD481' : 'white',
+          color: state.isSelected ? '#30323D' : '#30323D',
           height: 40
         }),
         singleValue: (provided, state) => {
@@ -60,7 +61,7 @@ const Step3 = props => {
     return (
     <div>
         <div className="previous-form" onClick={props.previous}>
-            About<br/>Me
+            Mentor<br/>Preferences:<br/>Passion
         </div>
         <div className="form-container step3">
             <div className="previous" onClick={props.previous}><FontAwesomeIcon icon={faArrowLeft} /></div>
@@ -75,7 +76,7 @@ const Step3 = props => {
                 <div className="form-content-right">
                     <div className="choices">
                         <img src={polygon} alt="polygon"/>    
-                        <p>My mentor is passionate about...</p>
+                        <p>My mentor works in...</p>
                         <Select
                         styles={customStyles}
                         options={options}
@@ -91,24 +92,6 @@ const Step3 = props => {
                         options={options}
                         onChange={props.handleChangeSelectPassion3}
                         />
-                        {/* <select className="select" onChange={props.handleChangeSelectPassion1}>
-                            <option disabled selected value> Select... </option>
-                            {options.map((option) => (
-                                props.passion2!==option.value && props.passion3!==option.value? <option value={option.value}>{option.label}</option> : null
-                            ))}
-                        </select>
-                        <select className="select" onChange={props.handleChangeSelectPassion2}>
-                            <option disabled selected value> Select... </option>
-                            {options.map((option) => (
-                                props.passion1!==option.value && props.passion3!==option.value? <option value={option.value}>{option.label}</option> : null
-                            ))}
-                        </select>
-                        <select className="select" onChange={props.handleChangeSelectPassion3}> 
-                            <option disabled selected value> Select... </option>
-                            {options.map((option) => (
-                                props.passion2!==option.value && props.passion1!==option.value? <option value={option.value}>{option.label}</option> : null
-                            ))}
-                        </select> */}
                     </div>
                 </div>
             </div>
@@ -116,10 +99,10 @@ const Step3 = props => {
             <div className="next" onClick={props.next}><FontAwesomeIcon icon={faArrowRight} /></div>
         </div>
         <div className="next-form" onClick={props.next}>
-            Mentor<br/>Preferences:<br/>Career
+        View<br/>Matches
         </div>
     </div>
   );
 }
 
-export default Step3;
+export default Step4;

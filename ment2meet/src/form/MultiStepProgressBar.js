@@ -15,12 +15,12 @@ const MultiStepProgressBar = props => {
                     {props.currentStep===2 ? <img src={pinImage} alt="pin" /> : null}
                     About Me
                 </li>
-                <li className={props.currentStep===3 ? 'is-active' : ''}>
-                    {props.currentStep===3 ? <img src={pinImage} alt="pin" /> : null}
+                <li className={props.currentStep===3 || props.currentStep===4 ? 'is-active' : ''}>
+                    {props.currentStep===3 || props.currentStep===4 ? <img src={pinImage} alt="pin" /> : null}
                     Mentor Preferences
                 </li>
-                <li className={props.currentStep===4 ? 'is-active' : ''}>
-                    {props.currentStep===4 ? <img src={pinImage} alt="pin" /> : null}
+                <li className={props.currentStep===5 ? 'is-active' : ''}>
+                    {props.currentStep===5 ? <img src={pinImage} alt="pin" /> : null}
                     View Your Matches
                 </li>
           </ul>
