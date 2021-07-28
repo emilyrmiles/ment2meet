@@ -1,9 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import{BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './components/pages/Home';
-// import Footer from './components/Footer';
+import Home from './components/pages/Home'
+import MasterForm  from './form/MasterForm';
+import Card  from './groupSessionCards/Card';
 
 
 function App() {
@@ -11,9 +12,7 @@ function App() {
     
     <Router>
       <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-        </Switch>
+        <MasterForm />
     </Router>
   );
 }

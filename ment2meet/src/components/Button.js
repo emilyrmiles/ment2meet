@@ -1,6 +1,5 @@
 import React from 'react';
 import './Button.css';
-import {Link } from 'react-dom';
 import styled from 'styled-components';
 
 
