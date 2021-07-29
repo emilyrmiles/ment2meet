@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import formImage from './Saly-14.png';
 import background from './Vector 132.svg';
 import polygon from './Polygon 1.svg';
-import Select from 'react-select';
 
 // eslint-disable-next-line no-empty-pattern
 const Step4 = props => {
@@ -52,32 +51,6 @@ const Step4 = props => {
             value: "Engineering",
         },
     ];
-    const customStyles = {
-        control: (base, state) => ({
-            ...base,
-            boxShadow: "2px 5px 20px rgba(0, 0, 0, 0.25)",
-            fontFamily: "Helvetica",
-            fontStyle: "normal",
-            fontWeight: "normal",
-            fontSize: "14px",
-            marginTop: "20px",
-            marginBottom: "10px"
-            // You can also use state.isFocused to conditionally style based on the focus state
-          }),
-        option: (provided, state) => ({
-          ...provided,
-          borderBottom: '1px solid #30323D',
-          backgroundColor: state.isSelected ? '#FFD481' : 'white',
-          color: state.isSelected ? '#30323D' : '#30323D',
-          height: 40
-        }),
-        singleValue: (provided, state) => {
-          const opacity = state.isDisabled ? 0.5 : 1;
-          const transition = 'opacity 300ms';
-      
-          return { ...provided, opacity, transition };
-        }
-      }
     return (
     <div>
         <div className="previous-form" onClick={props.previous}>
@@ -97,21 +70,6 @@ const Step4 = props => {
                     <div className="choices">
                         <img src={polygon} alt="polygon"/>    
                         <p>My mentor works in...</p>
-                        {/* <Select
-                        styles={customStyles}
-                        options={options}
-                        onChange={props.handleChangeSelectCareer1}
-                        />
-                        <Select
-                        styles={customStyles}
-                        options={options}
-                        onChange={props.handleChangeSelectCareer2}
-                        />
-                        <Select
-                        styles={customStyles}
-                        options={options}
-                        onChange={props.handleChangeSelectCareer3}
-                        /> */}
                         <select name="career1" value={props.career1!==""?props.career1:null} className="select" onChange={props.handleChange}>
                             <option disabled selected value> Select... </option>
                             {options.map((option) => (
@@ -131,7 +89,6 @@ const Step4 = props => {
                             ))}
                         </select>
                         
-                <input type="submit" value="Register"/>
                     </div>
                 </div>
             </div>

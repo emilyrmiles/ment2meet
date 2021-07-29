@@ -19,9 +19,9 @@ const MultiStepProgressBar = props => {
                     {props.currentStep===3 || props.currentStep===4 ? <img src={pinImage} alt="pin" /> : null}
                     Mentor Preferences
                 </li>
-                <li className={props.currentStep===5 ? 'is-active' : ''}>
-                    {props.currentStep===5 ? <img src={pinImage} alt="pin" /> : null}
-                    View Your Matches
+                <li className={props.currentStep===5 || props.currentStep===6 ? 'is-active' : ''}>
+                    {props.currentStep===5 || props.currentStep===6 ? <img src={pinImage} alt="pin" /> : null}
+                    {props.currentStep===5 ? "Review Information" : "View Your Matches"}
                 </li>
           </ul>
       </div>

@@ -7,6 +7,7 @@ import Step3 from "./Step3";
 import MultiStepProgressBar from "./MultiStepProgressBar";
 import Step4 from "./Step4";
 import Step5 from "./Step5";
+import Step6 from "./Step6";
 
 import axios from "axios"; 
 
@@ -99,8 +100,9 @@ class MasterForm extends Component {
       const body = JSON.stringify(newUser);
       const response = await axios.post('http://localhost:5000/api/users', body, config);
       console.log(response.data);
+      this._next();
     } catch (err) {
-      console.error(err.response.data);
+      alert(err.response.data.errors[0].msg);
     }
 }
 onSubmit2 = async e => {
@@ -110,8 +112,9 @@ onSubmit2 = async e => {
     const response = await axios.get(string);
     console.log(response.data);
     this.state.mentors = response.data;
+    this._next();
   } catch (err) {
-    console.error(err.response.data);
+    alert(err.response.data.errors[0].msg);
   }
 }
 
@@ -167,7 +170,7 @@ onSubmit2 = async e => {
     let currentStep = this.state.currentStep;
 
     // If the current step is 1 or 2, then add one on "next" button click
-    currentStep = currentStep >= 4 ? 5 : currentStep + 1;
+    currentStep = currentStep >= 5 ? 6 : currentStep + 1;
     this.setState({
       currentStep: currentStep
     });
@@ -248,12 +251,27 @@ onSubmit2 = async e => {
                 handleChangeSelectCareer3={this.handleChangeSelectCareer3}
               />
               <Step5
+                next={this._next}
+                previous={this._prev}
+                currentStep={this.state.currentStep}
+                handleChange={this.handleChange}
+                profilePicture={this.state.profilePicture}
+                name={this.state.name}
+                major={this.state.major}
+                passion1={this.state.passion1}
+                passion2={this.state.passion2}
+                passion3={this.state.passion3}
+                career1={this.state.career1}
+                career2={this.state.career2}
+                career3={this.state.career3}
+              />
+              </form>
+              <Step6
                 previous={this._prev}
                 currentStep={this.state.currentStep}
                 handleChange={this.handleChange}
                 mentors = {this.state.mentors}
               />
-              </form>
           </div>        
       </>
     );

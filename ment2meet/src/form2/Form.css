@@ -146,6 +146,32 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
+.step6 input[type="submit"]{
+    width: 161px;
+    height: 50px;
+
+    background: #626262;
+
+    border-radius: 53px;
+    border: none;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+    float:right;
+    margin-top: 38px;
+}
+.step6 input[type="submit"]:hover{
+    cursor: pointer;
+}
+.step6 span{
+    line-height: 140%;
+}
+
 .step2 .form-content .input{
     width: 610px;
     height: 40px;
@@ -253,7 +279,6 @@ h5{
     border-radius: 12px;
     padding: 0px 24px 24px 24px;
     width: 334px;
-    z-index: 1000;
 }
 .choices img{
     position: relative;

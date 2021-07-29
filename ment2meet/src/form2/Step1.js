@@ -65,9 +65,9 @@ const Step1 = props => {
                     <input type="submit" value="Match me with mentors!"/>
                 </div>
             </div>
-            <div className="next" onClick={props.next}><FontAwesomeIcon icon={faArrowRight} /></div>
+            <div className="next"><FontAwesomeIcon icon={faArrowRight} /></div>
         </div>
-        <div className="next-form" onClick={props.next}>
+        <div className="next-form">
             About<br/>Me
         </div>
     </div>
