@@ -24,14 +24,14 @@ const Step2 = props => {
                 <p>Answer a few questions to help mentors get to know you.</p>
             </div>
             <div className="form-content">
-                <label for="f25hours">There are now 25 hours in a day! How do you spend your extra hour?</label><br/>
-                <input type="text" class="input" id="f25hours" name="f25hours" placeholder="Your response here"/><br/>
-                <label for="fsuperheroes">If all the superheroes went to battle against each other, who do you think would win?</label><br/>
-                <input type="text" id="fsuperheroes" class="input" name="fsuperheroes" placeholder="Your response here"/><br/>
-                <label for="ffoods">If you could only pick three foods to eat for a month, which foods would you choose?</label><br/>
-                <input type="text" id="ffoods" name="ffoods" class="input" placeholder="Your response here"/><br/>
-                <label for="fstress">What activity helps you relieve stress?</label><br/>
-                <input type="text" id="fstress" name="fstress" class="input" placeholder="Your response here"/><br/>
+                <label for="hours">There are now 25 hours in a day! How do you spend your extra hour?</label><br/>
+                <input type="text" class="input" id="hours" name="hours" placeholder="Your response here" value={props.hours} onChange={props.handleChange}/><br/>
+                <label for="superheroes">If all the superheroes went to battle against each other, who do you think would win?</label><br/>
+                <input type="text" id="superheroes" class="input" name="superheroes" placeholder="Your response here" value={props.superheroes} onChange={props.handleChange}/><br/>
+                <label for="foods">If you could only pick three foods to eat for a month, which foods would you choose?</label><br/>
+                <input type="text" id="foods" name="foods" class="input" placeholder="Your response here" value={props.foods} onChange={props.handleChange}/><br/>
+                <label for="stress">What activity helps you relieve stress?</label><br/>
+                <input type="text" id="stress" name="stress" class="input" placeholder="Your response here" value={props.stress} onChange={props.handleChange}/><br/>
                 <img src={formImage} alt="Saly-16"/>
             </div>
             <div className="next" onClick={props.next}><FontAwesomeIcon icon={faArrowRight} /></div>

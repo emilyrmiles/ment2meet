@@ -29,6 +29,12 @@
     bottom: 30px;
 }
 
+.step5 .form-content{
+    padding-left: 59px;
+    padding-right: 59px;
+    padding-top: 23px;
+}
+
 .form-container .next{
     position: absolute;
     right: -35px;
@@ -135,6 +141,9 @@ input[type="submit"]{
     line-height: 18px;
 
     color: #FFFFFF;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
 }
 
 .step2 .form-content .input{
@@ -244,6 +253,7 @@ h5{
     border-radius: 12px;
     padding: 0px 24px 24px 24px;
     width: 334px;
+    z-index: 1000;
 }
 .choices img{
     position: relative;

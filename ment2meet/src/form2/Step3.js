@@ -76,7 +76,7 @@ const Step3 = props => {
                     <div className="choices">
                         <img src={polygon} alt="polygon"/>    
                         <p>My mentor is passionate about...</p>
-                        <Select
+                        {/* <Select
                         styles={customStyles}
                         options={options}
                         onChange={props.handleChangeSelectPassion1}
@@ -90,25 +90,25 @@ const Step3 = props => {
                         styles={customStyles}
                         options={options}
                         onChange={props.handleChangeSelectPassion3}
-                        />
-                        {/* <select className="select" onChange={props.handleChangeSelectPassion1}>
+                        /> */}
+                        <select name="passion1" value={props.passion1!==""?props.passion1:null} className="select" onChange={props.handleChange}>
                             <option disabled selected value> Select... </option>
                             {options.map((option) => (
                                 props.passion2!==option.value && props.passion3!==option.value? <option value={option.value}>{option.label}</option> : null
                             ))}
                         </select>
-                        <select className="select" onChange={props.handleChangeSelectPassion2}>
+                        <select name="passion2" value={props.passion2!==""?props.passion2:null} className="select" onChange={props.handleChange}>
                             <option disabled selected value> Select... </option>
                             {options.map((option) => (
                                 props.passion1!==option.value && props.passion3!==option.value? <option value={option.value}>{option.label}</option> : null
                             ))}
                         </select>
-                        <select className="select" onChange={props.handleChangeSelectPassion3}> 
+                        <select name="passion3" value={props.passion3!==""?props.passion3:null} className="select" onChange={props.handleChange}> 
                             <option disabled selected value> Select... </option>
                             {options.map((option) => (
                                 props.passion2!==option.value && props.passion1!==option.value? <option value={option.value}>{option.label}</option> : null
                             ))}
-                        </select> */}
+                        </select>
                     </div>
                 </div>
             </div>

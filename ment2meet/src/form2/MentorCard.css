@@ -1,0 +1,60 @@
+.mentor-card{
+  width: 238px;
+  height: 388px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+  filter: drop-shadow(2px 5px 20px rgba(0, 0, 0, 0.25));
+  float: left;
+
+  margin-left: 8px;
+  margin-right: 8px;
+
+  padding-top: 34px;
+  padding-bottom: 27px;
+  text-align: center;
+}
+
+.mentor-card img{
+  height: 139px;
+  width: 139px;
+
+  filter: drop-shadow(2px 5px 20px rgba(0, 0, 0, 0.25));
+
+  border-radius: 50%;
+}
+
+.card-content{
+  margin-top: 34px;
+  margin-bottom: 34px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #000000;
+}
+
+button{
+  padding: 8px;
+  border-radius: 5px;
+  background: #626262;
+  border: none;
+
+  font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+button:hover{
+  background: #A981FF;
+  cursor: pointer;
+}

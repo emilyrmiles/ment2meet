@@ -54,15 +54,14 @@ const Step1 = props => {
                         </div>
                 </div>
                 <div className="form-content-right">
-                    <label for="fname">What's your name?</label><br/>
-                    <input type="text" class="input" id="fname" name="fname" placeholder="First and last name" onChange={props.handleChangeName}/><br/>
-                    {props.name}
-                    <label for="femail">What's your email?</label><br/>
-                    <input type="text" id="femail" class="input" name="femail" placeholder="Start typing..."/><br/>
-                    <label for="fmajor">What you studying?</label><br/>
-                    <input type="text" id="fmajor" name="fmajor" class="input" placeholder="Subject / Major"/><br/>
-                    <label for="fpassword">Password</label><br/>
-                    <input type="password" id="fpassword" name="fpassword" class="input" placeholder="8 characters minimum"/><br/>
+                    <label for="name">What's your name?</label><br/>
+                    <input type="text" class="input" id="name" name="name" placeholder="First and last name" value={props.name} onChange={props.handleChange}/><br/>
+                    <label for="email">What's your email?</label><br/>
+                    <input type="text" id="email" class="input" name="email" placeholder="Start typing..." value={props.email} onChange={props.handleChange}/><br/>
+                    <label for="major">What you studying?</label><br/>
+                    <input type="text" id="major" name="major" class="input" placeholder="Subject / Major" value={props.major} onChange={props.handleChange}/><br/>
+                    <label for="password">Password</label><br/>
+                    <input type="password" id="password" name="password" class="input" placeholder="8 characters minimum" value={props.password} onChange={props.handleChange}/><br/>
                     <input type="submit" value="Match me with mentors!"/>
                 </div>
             </div>

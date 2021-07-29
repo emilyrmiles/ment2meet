@@ -77,21 +77,41 @@ const Step4 = props => {
                     <div className="choices">
                         <img src={polygon} alt="polygon"/>    
                         <p>My mentor works in...</p>
-                        <Select
+                        {/* <Select
                         styles={customStyles}
                         options={options}
-                        onChange={props.handleChangeSelectPassion1}
+                        onChange={props.handleChangeSelectCareer1}
                         />
                         <Select
                         styles={customStyles}
                         options={options}
-                        onChange={props.handleChangeSelectPassion2}
+                        onChange={props.handleChangeSelectCareer2}
                         />
                         <Select
                         styles={customStyles}
                         options={options}
-                        onChange={props.handleChangeSelectPassion3}
-                        />
+                        onChange={props.handleChangeSelectCareer3}
+                        /> */}
+                        <select name="career1" value={props.career1!==""?props.career1:null} className="select" onChange={props.handleChange}>
+                            <option disabled selected value> Select... </option>
+                            {options.map((option) => (
+                                props.career2!==option.value && props.career3!==option.value? <option value={option.value}>{option.label}</option> : null
+                            ))}
+                        </select>
+                        <select name="career2" value={props.career2!==""?props.career2:null} className="select" onChange={props.handleChange}>
+                            <option disabled selected value> Select... </option>
+                            {options.map((option) => (
+                                props.career1!==option.value && props.career3!==option.value? <option value={option.value}>{option.label}</option> : null
+                            ))}
+                        </select>
+                        <select name="career3" value={props.career3!==""?props.career3:null} className="select" onChange={props.handleChange}> 
+                            <option disabled selected value> Select... </option>
+                            {options.map((option) => (
+                                props.career2!==option.value && props.career1!==option.value? <option value={option.value}>{option.label}</option> : null
+                            ))}
+                        </select>
+                        
+                <input type="submit" value="Register"/>
                     </div>
                 </div>
             </div>
