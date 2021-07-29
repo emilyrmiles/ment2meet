@@ -10,6 +10,11 @@
     padding: 25px;
   
     text-align: left;
+    display: inline-block;
+    margin: 50px;
+  }
+  .cards-container{
+    text-align: center;
   }
 .card-top{
     height: 30px;

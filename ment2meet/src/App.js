@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home'
 import MasterForm  from './form2/MasterForm';
-import Card  from './groupSessionCards/Card';
+import CardPage  from './groupSessionCards/CardPage';
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <Route path="/home" component={Home} />
       <Route path="/register" component={MasterForm} />
+      <Route path="/group-sessions" component={CardPage} />
     </Router>
   );
 }
