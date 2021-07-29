@@ -5,13 +5,15 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home'
 import MasterForm  from './form/MasterForm';
 import Card  from './groupSessionCards/Card';
+import Register from './components/test/register'
 
 
 function App() {
   return (
     <Router>
       <Navbar />
-        <MasterForm />
+      <Route path="/home" component={Home} />
+      <Route path="/register" component={Register} />
     </Router>
   );
 }
