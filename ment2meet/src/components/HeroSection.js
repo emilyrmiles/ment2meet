@@ -5,6 +5,7 @@ import {Button} from './Button.js';
 import styled from 'styled-components'
 import CardOne from './CardOne.js'
 import CardTwo from './CardTwo';
+import {Link} from 'react-router-dom'
 
 function HeroSection() {
     return (
@@ -15,8 +16,8 @@ function HeroSection() {
                     <h1 > meaningful connections</h1>
                     <div className= 'hero-below'>
                         <p >As undergraduate students, meeting a mentor can be difficult. ment2meet allows students to access mentorship opportunities and create a meaningful connection with a mentor </p>
+                        <Link to="/register"> <button class="btn">Find a Mentor Now</button></Link>
                         
-                        <button class="btn">Find a Mentor Now</button>
                         <button class="btn">Become a Mentor</button>
                             <div className='right-image'>
                                 {}

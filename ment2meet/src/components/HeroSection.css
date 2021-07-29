@@ -35,7 +35,7 @@
     top: 96%;
     left: 15%;
     transform: translate(-18%, -3%);
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal; 
     font-size: 26px;   
@@ -54,7 +54,7 @@
     margin: 12px 0px;
     margin-right: 10px;
     cursor: pointer;
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: bold;
 }

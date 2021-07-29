@@ -6,8 +6,8 @@ const Navbar = () => {
     return (
    
         
-          <Nav>
-              <NavLink to= "/">
+          <Nav className="navbar-container">
+              <NavLink to= "/home">
                 <img src={logo} alt='ment2meet logo' width="150" height="45" />
               </NavLink>
               <Bars />
@@ -38,17 +38,17 @@ const Navbar = () => {
                   >
                     Mentors
                   </NavLink>
-                  <NavLink to='/contact-us' 
+                  <NavLink to='/group-sessions' 
                   activeStyle={{
                     fontWeight: "bold",
                     
                   }}
                   >
-                    Contact Us
+                    Group Sessions
                   </NavLink>
               </NavMenu>
               <NavBtn>
-                  <NavBtnLink to='/signin'>Sign Up/ Sign In</NavBtnLink>
+                  <NavBtnLink to='/register'>Sign Up/ Sign In</NavBtnLink>
               </NavBtn>
             </Nav>  
     

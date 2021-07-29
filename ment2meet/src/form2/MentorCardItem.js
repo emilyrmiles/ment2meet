@@ -7,14 +7,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function MentorCardItem(props) {
   return (
-    <div className="mentor-card">
-        <div className ="card-image"> 
+    <div className="mentor-card-step5">
+        <div className ="card-image-step5"> 
             <img 
-             className='profile-pic'
+             className='profile-pic-step5'
              src={props.src} alt="profile-pic"/>
         </div>
 
-        <div className= 'card-content'>
+        <div className= 'card-content-step5'>
             <span style={{fontWeight: 'bold', fontSize:'16px'}}>{props.name} </span><br/>
             <span style={{ color: 'grey' }}> {props.pronouns} </span><br/>
             <span style={{fontWeight: 'bold'}}> {props.position} </span> at <span style={{fontWeight: 'bold'}}> {props.company} </span>

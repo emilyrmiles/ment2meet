@@ -12,7 +12,8 @@ function App() {
     
     <Router>
       <Navbar />
-      <MasterForm/>
+      <Route path="/home" component={Home} />
+      <Route path="/register" component={MasterForm} />
     </Router>
   );
 }

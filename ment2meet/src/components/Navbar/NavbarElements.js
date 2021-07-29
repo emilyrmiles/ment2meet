@@ -18,7 +18,7 @@ export const NavLink = styled(Link)`
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
     padding: 0 2.5rem;
@@ -47,7 +47,7 @@ export const NavMenu = styled.div`
     display: fixed;
     align-items: center;
     margin-right: -24px;
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
     
@@ -75,7 +75,7 @@ export const NavBtnLink = styled(Link)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     align-items: 'center'
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
 

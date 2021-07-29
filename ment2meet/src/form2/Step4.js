@@ -13,23 +13,43 @@ const Step4 = props => {
     if (props.currentStep !== 4) {
       return null;
     }
-    
+
     const options = [
         {
-            label: "Apple",
-            value: "apple",
+            label: "Astrology",
+            value: "Astrology",
         },
         {
-            label: "Mango",
-            value: "mango",
+            label: "Healthcare",
+            value: "Healthcare",
         },
         {
-            label: "Banana",
-            value: "banana",
+            label: "Fintech",
+            value: "Fintech",
         },
         {
-            label: "Pineapple",
-            value: "pineapple",
+            label: "Information Technology",
+            value: "Information Technology",
+        },
+        {
+            label: "Data Science",
+            value: "Data Science",
+        },
+        {
+            label: "Fashion Design",
+            value: "Fashion Design",
+        },
+        {
+            label: "Cognitive Science",
+            value: "Cognitive Science",
+        },
+        {
+            label: "Business",
+            value: "Business",
+        },
+        {
+            label: "Engineering",
+            value: "Engineering",
         },
     ];
     const customStyles = {

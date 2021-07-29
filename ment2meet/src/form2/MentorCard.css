@@ -1,4 +1,4 @@
-.mentor-card{
+.mentor-card-step5{
   width: 238px;
   height: 388px;
 
@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.mentor-card img{
+.mentor-card-step5 img{
   height: 139px;
   width: 139px;
 
@@ -24,7 +24,7 @@
   border-radius: 50%;
 }
 
-.card-content{
+.card-content-step5{
   margin-top: 34px;
   margin-bottom: 34px;
   font-family: Helvetica;

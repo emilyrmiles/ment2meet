@@ -20,27 +20,20 @@ const Step5 = props => {
             <div className="previous" onClick={props.previous}><FontAwesomeIcon icon={faArrowLeft} /></div>
             <div className="form-title">
                 <h1>Mentors Matched For You</h1>
-                <p>Based on your profile, here are the top 3 mentors that matches your mentor preferences. To kickstart your mentorship, we recommend scheduling a mentoring session with one of them..</p>
+                <p>Based on your profile, here are the top {props.mentors.length} mentors that matches your mentor preferences. To kickstart your mentorship, we recommend scheduling a mentoring session with one of them..</p>
             </div>
             <div className="form-content">
-                <MentorCardItem
+                {props.mentors.map((mentor) => {
+                return (
+                    <MentorCardItem
                     src = {img4}
-                    name = 'Jane L.'
-                    pronouns = 'she/her'
-                    position = 'Product designer'
-                    company = "Airbnb"/>
-                <MentorCardItem
-                    src = {img4}
-                    name = 'Jane L.'
-                    pronouns = 'she/her'
-                    position = 'Product designer'
-                    company = "Airbnb"/>
-                <MentorCardItem
-                    src = {img4}
-                    name = 'Jane L.'
-                    pronouns = 'she/her'
-                    position = 'Product designer'
-                    company = "Airbnb"/>
+                    name = {mentor.name}
+                    pronouns = {mentor.pronounce}
+                    position = {mentor.position}
+                    company = {mentor.company}/>
+                );
+                })}
+                
             </div>
         </div>
     </div>

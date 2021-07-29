@@ -31,7 +31,8 @@ class MasterForm extends Component {
       passion3: "",
       career1: "",
       career2: "",
-      career3: ""
+      career3: "",
+      mentors: []
     };
 
     // Bind the submission to handleChange()
@@ -105,8 +106,10 @@ class MasterForm extends Component {
 onSubmit2 = async e => {
   e.preventDefault();
   try {
-    const response = await axios.get('http://localhost:5000/api/mentor/fliter?major=}&passion1=dance&passion2=music&passion3=swim');
+    const string = 'http://localhost:5000/api/mentor/fliter?major='+this.state.major+'&passion1='+this.state.passion1+'&passion2='+this.state.passion2+'&passion3='+this.state.passion3
+    const response = await axios.get(string);
     console.log(response.data);
+    this.state.mentors = response.data;
   } catch (err) {
     console.error(err.response.data);
   }
@@ -248,6 +251,7 @@ onSubmit2 = async e => {
                 previous={this._prev}
                 currentStep={this.state.currentStep}
                 handleChange={this.handleChange}
+                mentors = {this.state.mentors}
               />
               </form>
           </div>        

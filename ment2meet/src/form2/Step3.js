@@ -13,23 +13,42 @@ const Step3 = props => {
     if (props.currentStep !== 3) {
       return null;
     }
-    
     const options = [
         {
-            label: "Apple",
-            value: "apple",
+            label: "Personal Branding",
+            value: "Personal Branding",
         },
         {
-            label: "Mango",
-            value: "mango",
+            label: "UI UX Design",
+            value: "UI UX Design",
         },
         {
-            label: "Banana",
-            value: "banana",
+            label: "Startups & Innovation",
+            value: "Startups & Innovation",
         },
         {
-            label: "Pineapple",
-            value: "pineapple",
+            label: "Product Design",
+            value: "Product Design",
+        },
+        {
+            label: "AAPI Representation",
+            value: "AAPI Representation",
+        },
+        {
+            label: "Mental Health",
+            value: "Mental Health",
+        },
+        {
+            label: "Women in Tech",
+            value: "Women in Tech",
+        },
+        {
+            label: "Black Lives Matter",
+            value: "Black Lives Matter",
+        },
+        {
+            label: "LGBTQIA+rights",
+            value: "LGBTQIA+rights",
         },
     ];
     const customStyles = {
@@ -91,20 +110,20 @@ const Step3 = props => {
                         options={options}
                         onChange={props.handleChangeSelectPassion3}
                         /> */}
-                        <select name="passion1" value={props.passion1!==""?props.passion1:null} className="select" onChange={props.handleChange}>
-                            <option disabled selected value> Select... </option>
+                        <select name="passion1" value={props.passion1} className="select" onChange={props.handleChange}>
+                            <option disabled selected value=""> Select... </option>
                             {options.map((option) => (
                                 props.passion2!==option.value && props.passion3!==option.value? <option value={option.value}>{option.label}</option> : null
                             ))}
                         </select>
-                        <select name="passion2" value={props.passion2!==""?props.passion2:null} className="select" onChange={props.handleChange}>
-                            <option disabled selected value> Select... </option>
+                        <select name="passion2" value={props.passion2} className="select" onChange={props.handleChange}>
+                        <option disabled selected value=""> Select... </option>
                             {options.map((option) => (
                                 props.passion1!==option.value && props.passion3!==option.value? <option value={option.value}>{option.label}</option> : null
                             ))}
                         </select>
-                        <select name="passion3" value={props.passion3!==""?props.passion3:null} className="select" onChange={props.handleChange}> 
-                            <option disabled selected value> Select... </option>
+                        <select name="passion3" value={props.passion3} className="select" onChange={props.handleChange}> 
+                        <option disabled selected value=""> Select... </option>
                             {options.map((option) => (
                                 props.passion2!==option.value && props.passion1!==option.value? <option value={option.value}>{option.label}</option> : null
                             ))}
