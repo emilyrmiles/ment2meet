@@ -34,7 +34,7 @@ const Step5 = props => {
                         <br/>
                         <span><span style={{ color: '#A981FF' }}><FontAwesomeIcon icon={faUser} /></span> Hello, my name is <span style={{ fontWeight: 'bold' }}> {props.name}</span>.</span><br/><br/>
                         <span><span style={{ color: '#A981FF' }}><FontAwesomeIcon icon={faBookOpen} /></span> I’m a student studying <span style={{ fontWeight: 'bold' }}> {props.major}</span>.</span><br/><br/>
-                        <span><span style={{ color: '#A981FF' }}><FontAwesomeIcon icon={faClipboard} /></span> My ideal mentor is passionate about <span style={{ fontWeight: 'bold' }}> {props.passion1} </span>, <span style={{ fontWeight: 'bold' }}> {props.passion2} </span>, and <span style={{ fontWeight: 'bold' }}> {props.passion3}</span>. They work in <span style={{ fontWeight: 'bold' }}> {props.career1} </span>, <span style={{ fontWeight: 'bold' }}> {props.career2} </span> or <span style={{ fontWeight: 'bold' }}> {props.career3}</span>.</span>
+                        <span><span style={{ color: '#A981FF' }}><FontAwesomeIcon icon={faClipboard} /></span> My ideal mentor is passionate about <span style={{ fontWeight: 'bold' }}> {props.passion1}</span>, <span style={{ fontWeight: 'bold' }}> {props.passion2}</span>, and <span style={{ fontWeight: 'bold' }}> {props.passion3}</span>. They work in <span style={{ fontWeight: 'bold' }}> {props.career1}</span>, <span style={{ fontWeight: 'bold' }}> {props.career2}</span> or <span style={{ fontWeight: 'bold' }}> {props.career3}</span>.</span>
                         
                         
                     </div>
