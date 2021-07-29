@@ -1,4 +1,4 @@
-.card {
+.card-one {
   padding: 4rem;
   background: #fff;
   transform: translate(0%, 2000px);  
@@ -34,7 +34,7 @@ h3 {
   color: rgba(48, 50, 61, 0.7);
 } 
 
-.card-wrapper {
+.card-one-wrapper {
   align-items: start;
   position: relative;
   margin: 50px 0 50px;
@@ -46,7 +46,7 @@ h3 {
   border-radius: 20px;
   grid-template-columns: repeat(auto-fit, 340px);
 }
-.card-container
+.card-one-container
 {
   width: 340px;
   height: 190px;
