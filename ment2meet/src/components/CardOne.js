@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Card.css';
-import CardItem from './CardItem';
+import './CardOne.css';
+import CardOneItem from './CardOneItem';
 
 import img1 from '../assets/Saly-1.png';
 import img2 from '../assets/Saly-17.png';
@@ -9,7 +9,7 @@ import img4 from '../assets/test-lizzie.jpg';
 import img5 from '../assets/Saly-11.png';
 import img6 from '../assets/Saly-7.png';
 
-function Card() {
+function CardOne() {
 
     // const [name, setName] = useState('Your Name');
     // const [job, setJob] = useState('(pronouns)');
@@ -31,56 +31,56 @@ function Card() {
         <div className= 'card-wrapper'> 
 
             <div className = 'card-container'>
-                <CardItem
+                <CardOneItem
                     src = {img1}
                     name = 'Sally'
                     pronouns = '(she series)'
                     about = 'hi!'> 
-                </CardItem>
+                </CardOneItem>
             </div>
 
             <div className = 'card-container'>
-                <CardItem
+                <CardOneItem
                     src = {img2}
                     name = 'Habiba'
                     pronouns = '(she/her/hers)'
                     about = 'hello everyone'> 
-                </CardItem>
+                </CardOneItem>
             </div>
 
             <div className = 'card-container'>
-                <CardItem
+                <CardOneItem
                     src = {img3}
                     name = 'Laura'
                     pronouns = '(she/her/hers)'
                     about = 'hola!'> 
-                </CardItem>
+                </CardOneItem>
             </div>
             <div className = 'card-container'>
-                <CardItem
+                <CardOneItem
                     src = {img4}
                     name = 'Emily'
                     pronouns = '(she/her)'
                     about = 'hello'> 
-                </CardItem>
+                </CardOneItem>
             </div>
 
             <div className = 'card-container'>
-                <CardItem
+                <CardOneItem
                     src = {img5}
                     name = 'Kaly'
                     pronouns = '(she/her)'
                     about = 'hi all!'> 
-                </CardItem>
+                </CardOneItem>
             </div>
 
             <div className = 'card-container'>
-                <CardItem
+                <CardOneItem
                     src = {img6}
                     name = 'Yan'
                     pronouns = '(she series)'
                     about = 'nice to meet you!'> 
-                </CardItem>
+                </CardOneItem>
             </div>
 
             
@@ -91,4 +91,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default CardOne;
