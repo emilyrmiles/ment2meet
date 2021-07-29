@@ -3,7 +3,7 @@ import '../App.css'
 import './HeroSection.css'
 import {Button} from './Button.js';
 import styled from 'styled-components'
-import Card from './Card.js'
+import CardOne from './CardOne.js'
 import CardTwo from './CardTwo';
 
 function HeroSection() {
