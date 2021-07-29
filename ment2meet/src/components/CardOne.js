@@ -16,7 +16,7 @@ function CardOne() {
     // const [about, setAbout] = useState('About');
   return (
     
-    <div class="card">
+    <div class="card-one">
         <h2 > Meet the Founders!</h2>
         <h3>As undergraduate students, we drew from our own experiences and frustrations in search for a mentor. Our frustrations led to ment2meet being created. We believe in equal opportunity, and that everyone deserves a chance at their dream job! We are so excited to connect mentees and mentors all around the world.</h3>
         {/* <div class="card-image"> 
@@ -28,9 +28,9 @@ function CardOne() {
             <h4 style={{ color: 'grey' }}> {job} </h4>
             <p> {about} </p>
         </div> */}
-        <div className= 'card-wrapper'> 
+        <div className= 'card-one-wrapper'> 
 
-            <div className = 'card-container'>
+            <div className = 'card-one-container'>
                 <CardOneItem
                     src = {img1}
                     name = 'Sally'
@@ -39,7 +39,7 @@ function CardOne() {
                 </CardOneItem>
             </div>
 
-            <div className = 'card-container'>
+            <div className = 'card-one-container'>
                 <CardOneItem
                     src = {img2}
                     name = 'Habiba'
@@ -48,7 +48,7 @@ function CardOne() {
                 </CardOneItem>
             </div>
 
-            <div className = 'card-container'>
+            <div className = 'card-one-container'>
                 <CardOneItem
                     src = {img3}
                     name = 'Laura'
@@ -56,7 +56,7 @@ function CardOne() {
                     about = 'hola!'> 
                 </CardOneItem>
             </div>
-            <div className = 'card-container'>
+            <div className = 'card-one-container'>
                 <CardOneItem
                     src = {img4}
                     name = 'Emily'
@@ -65,7 +65,7 @@ function CardOne() {
                 </CardOneItem>
             </div>
 
-            <div className = 'card-container'>
+            <div className = 'card-one-container'>
                 <CardOneItem
                     src = {img5}
                     name = 'Kaly'
@@ -74,7 +74,7 @@ function CardOne() {
                 </CardOneItem>
             </div>
 
-            <div className = 'card-container'>
+            <div className = 'card-one-container'>
                 <CardOneItem
                     src = {img6}
                     name = 'Yan'
