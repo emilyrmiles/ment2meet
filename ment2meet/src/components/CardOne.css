@@ -1,6 +1,7 @@
-.card {
+.card-one {
   padding: 4rem;
   background: #fff;
+  transform: translate(0%, 2000px);  
 }
 
 
@@ -33,7 +34,7 @@ h3 {
   color: rgba(48, 50, 61, 0.7);
 } 
 
-.card-wrapper {
+.card-one-wrapper {
   align-items: start;
   position: relative;
   margin: 50px 0 50px;
@@ -45,7 +46,7 @@ h3 {
   border-radius: 20px;
   grid-template-columns: repeat(auto-fit, 340px);
 }
-.card-container
+.card-one-container
 {
   width: 340px;
   height: 190px;
@@ -68,6 +69,8 @@ h3 {
   margin: 0px 20px;
   text-align: center;
   line-height: 60px;
+
+  transform: translate(40%, -50%);
 }
 
 .profile-pic {
@@ -84,6 +87,8 @@ h3 {
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
+
+  transform: translate(-40%, 50%);
 }
 
 .props-name {

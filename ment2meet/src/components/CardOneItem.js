@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function CardItem(props) {
+function CardOneItem(props) {
   return (
     <div>
         <div className ="card-image"> 
@@ -19,4 +19,4 @@ function CardItem(props) {
   );
 }
 
-export default CardItem;
+export default CardOneItem;
