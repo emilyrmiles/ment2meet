@@ -21,7 +21,7 @@ const Navbar = () => {
                   >
                     About
                   </NavLink>
-                  <NavLink to='/mentors' 
+                  <NavLink to='/resources' 
                   activeStyle={{
                     fontWeight: "bold",
                     
@@ -29,7 +29,7 @@ const Navbar = () => {
                   >
                     Resources
                   </NavLink>
-                  <NavLink to='/resources' 
+                  <NavLink to='/mentors' 
                   activeStyle={{
                     fontWeight: "bold",
                    

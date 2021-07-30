@@ -32,7 +32,7 @@ function CardOne() {
 
             <div className = 'card-one-container'>
                 <CardOneItem
-                    src = {img1}
+                    src = {"https://ca.slack-edge.com/T5M2Z16PR-U024TEA8NA2-f51dec613021-512"}
                     name = 'Sally'
                     pronouns = '(she series)'
                     about = 'hi!'> 
@@ -41,7 +41,7 @@ function CardOne() {
 
             <div className = 'card-one-container'>
                 <CardOneItem
-                    src = {img2}
+                    src = {"https://ca.slack-edge.com/T5M2Z16PR-U024TEBGQF8-da5c758fcd5c-512"}
                     name = 'Habiba'
                     pronouns = '(she/her/hers)'
                     about = 'hello everyone'> 
@@ -50,7 +50,7 @@ function CardOne() {
 
             <div className = 'card-one-container'>
                 <CardOneItem
-                    src = {img3}
+                    src = {"https://ca.slack-edge.com/T5M2Z16PR-U0256CW1H7E-d126d98e76b9-512"}
                     name = 'Laura'
                     pronouns = '(she/her/hers)'
                     about = 'hola!'> 
@@ -58,7 +58,7 @@ function CardOne() {
             </div>
             <div className = 'card-one-container'>
                 <CardOneItem
-                    src = {img4}
+                    src = {"https://ca.slack-edge.com/T5M2Z16PR-U02507UUA74-8d115ae5b02b-512"}
                     name = 'Emily'
                     pronouns = '(she/her)'
                     about = 'hello'> 
@@ -67,7 +67,7 @@ function CardOne() {
 
             <div className = 'card-one-container'>
                 <CardOneItem
-                    src = {img5}
+                    src = {"https://ca.slack-edge.com/T5M2Z16PR-U01535LKV1U-1835f787c2a2-512"}
                     name = 'Kaly'
                     pronouns = '(she/her)'
                     about = 'hi all!'> 
@@ -76,7 +76,7 @@ function CardOne() {
 
             <div className = 'card-one-container'>
                 <CardOneItem
-                    src = {img6}
+                    src = {"https://ca.slack-edge.com/T5M2Z16PR-U0250EFVASF-a847b8953773-512"}
                     name = 'Yan'
                     pronouns = '(she series)'
                     about = 'nice to meet you!'> 

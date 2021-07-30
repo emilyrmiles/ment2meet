@@ -14,7 +14,7 @@ const Step6 = props => {
     return (
     <div>
         <div className="previous-form" onClick={props.previous}>
-            Mentor<br/>Preferences:<br/>Passion
+            Review<br/>Information
         </div>
         <div className="form-container step5">
             <div className="previous" onClick={props.previous}><FontAwesomeIcon icon={faArrowLeft} /></div>
@@ -26,7 +26,7 @@ const Step6 = props => {
                 {props.mentors.map((mentor) => {
                 return (
                     <MentorCardItem
-                    src = {img4}
+                    src = {mentor.avatar}
                     name = {mentor.name}
                     pronouns = {mentor.pronounce}
                     position = {mentor.position}

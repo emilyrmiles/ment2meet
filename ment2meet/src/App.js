@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home'
 import MasterForm  from './form2/MasterForm';
+import Mentors  from './mentors/Mentors';
 import CardPage  from './groupSessionCards/CardPage';
 
 
@@ -15,6 +16,7 @@ function App() {
       <Route path="/home" component={Home} />
       <Route path="/register" component={MasterForm} />
       <Route path="/group-sessions" component={CardPage} />
+      <Route path="/mentors" component={Mentors} />
     </Router>
   );
 }

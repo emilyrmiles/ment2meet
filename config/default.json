@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://yz123:yz123@ment2meetdatabases.g4vox.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://kaly:ZY3SmDnrWJElWNT0@ment2meetdatabases.g4vox.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "jwtSecret": "mysecrecttoken"
 }

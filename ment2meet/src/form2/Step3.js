@@ -31,8 +31,8 @@ const Step3 = props => {
             value: "Product Design",
         },
         {
-            label: "AAPI Representation",
-            value: "AAPI Representation",
+            label: "AAPI representation",
+            value: "AAPI representation",
         },
         {
             label: "Mental Health",
@@ -47,8 +47,12 @@ const Step3 = props => {
             value: "Black Lives Matter",
         },
         {
-            label: "LGBTQIA+rights",
-            value: "LGBTQIA+rights",
+            label: "LGBTQIA rights",
+            value: "LGBTQIA rights",
+        },
+        {
+            label: "Animal Rights",
+            value: "Animal Rights",
         },
     ];
     const customStyles = {
